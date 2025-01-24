@@ -10,7 +10,7 @@ class API:
 
 class data_compiler:
     #cl_object is an object of the API class which is gonna be compiled into plain html file text
-    def __init(self, cl_object):
+    def __init__(self, cl_object):
         pass
 
 if __name__ == "__main__":
