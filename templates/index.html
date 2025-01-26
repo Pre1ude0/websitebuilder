@@ -10,7 +10,7 @@
         />
     </head>
     <body>
-        <div class="config-panel">
+        <div class="config-panel" id="config">
             <input type="text" id="title" placeholder="Title" />
             <div class="element-tree">
                 <div class="title">
@@ -23,9 +23,14 @@
                             ></i>
                         </button>
                     </div>
-				</div>
+                </div>
+                <div class="close" onclick="document.getElementById('config').classList.toggle('hidden')">
+                    <button id="close-element">
+                        <i class="nf nf-fae-bigger"></i>
+                    </button>
+                </div>
             </div>
-			<div class="elements" id="tree"></div>
+            <div class="elements" id="tree"></div>
         </div>
         <div class="edit-preview" id="preview"></div>
         <script src="/static/js/script.js"></script>
