@@ -30,6 +30,15 @@ function refreshPreview() {
 	})
 }
 
+function refreshTree() {
+	elementTree.innerHTML = ""
+	page.forEach(element => {
+		let newElement = document.createElement("div")
+		newElement.innerText = element.elementType
+		elementTree.appendChild(newElement)
+	})
+}
+
 function createNewElement(
 	parentElement=null,
 	elementType="div",
@@ -50,7 +59,7 @@ function createNewElement(
 	}
 	page.push(element)
 	refreshPreview()
-	console.log(page)
+	refreshTree()
 }
 
 

@@ -61,7 +61,7 @@ body {
 
 .config-panel .element-tree .title {
     margin-top: 10px;
-    min-height: 500px;
+    height: fit-content;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
