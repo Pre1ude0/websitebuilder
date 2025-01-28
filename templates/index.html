@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Website builder</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://www.nerdfonts.com/assets/css/webfont.css"
+        />
+    </head>
+    <body>
+        <div class="config-panel" id="config">
+            <input type="text" id="title" placeholder="Title" />
+            <div class="element-tree">
+                <div class="title">
+                    <h2>Elements</h2>
+                    <div class="buttons">
+                        <button id="add-element">
+                            <i
+                                class="nf nf-fa-plus"
+                                onclick="createNewElement(undefined, undefined, undefined, undefined, undefined, {'ts':'Hello world!'}, {'background-color':'#f00', 'width': '100px', 'height': '100px'})"
+                            ></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="close" onclick="document.getElementById('config').classList.toggle('hidden')">
+                    <button id="close-element">
+                        <i class="nf nf-fae-bigger"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="elements" id="tree"></div>
+        </div>
+        <div class="edit-preview" id="preview"></div>
+        <script src="/static/js/script.js"></script>
+		<script src="/static/js/navigate.js"></script>
+    </body>
+</html>
