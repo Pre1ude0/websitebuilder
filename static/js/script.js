@@ -28,7 +28,9 @@ function refreshPreview() {
 			preview.appendChild(newElement)
 		}
 	})
+	console.log(preview.innerHTML)
 }
+
 
 function refreshTree() {
 	elementTree.innerHTML = ""
