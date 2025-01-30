@@ -8,7 +8,7 @@ client = API("test")
 def index():
     return flask.render_template('index.html')
 
-@app.route("api/save", methods=["POST"])
+@app.route("/api/save", methods=["POST"])
 def save():
     return flask.make_response(client, 200)
 if __name__ == '__main__':
